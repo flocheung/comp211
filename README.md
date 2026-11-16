@@ -16,6 +16,7 @@ I explored how C files are compiled into usable code for Python, and how Python 
 This folder contains 2 files:
 - `add.c`: returns the sum of 2 given numbers
 - `add.py`: calls add() from `add.c` to add 10 & 20
+
 `add.c` does not need to be run; the main focus is on `add.py`. Before running `add.py`, you must compile `add.c` properly by running the command "gcc add.c -o add.so -shared -fPIC" in the terminal.
 
 ### compare_add.py
@@ -24,4 +25,5 @@ I compared the performance of adding 2 arrays of various sizes in Python vs. Num
 - `100` then `10` will add arrays of size 100 ten times.
 - `100` then `\n` will add arrays of size 100 one time.
 - `\n` will immediately throw an error and will not prompt a second time.
+
 After entering the prompts, `compare_add.py` will calculate the mean performance time of adding arrays in Python/NumPy across all trials. The means of both the Python and NumPy operations will be printed to the terminal.
